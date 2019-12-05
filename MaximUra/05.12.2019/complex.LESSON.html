@@ -1,0 +1,151 @@
+COMPLEX / ADVANCED / COMPOUND
+
+.FORMULAS > COMBINE SELECTORS
+
+<!-- 
+1. GROUPING SEL1, SEL2, SEL3 .... {
+            
+
+}
+
+
+
+
+}
+
+ -->
+<style>
+
+example grouping 
+ p,a, li, .first, :hover{
+      color: red;
+
+ }
+</style>
+
+
+<!-- 
+* direct descendant ПРЯМОЕ НАСЛЕДИЕ
+
+SEL1>SEL2>SEL3 {
+
+
+
+ -->
+
+ <!-- 
+    *discendant/ context
+
+    SEL1 SEL2 SEL3 {
+        
+
+
+    }
+
+
+  -->
+
+  <!-- 
+* intersection / combine
+
+SEL1SEL2SEL3{
+
+
+}
+
+
+   -->
+
+ <style>
+ li.first{
+           color: red;
+
+
+ }
+ </style>
+
+
+<ul class="first">
+    <li class="first">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit sit, minus deserunt veritatis amet atque eligendi deleniti at illo pariatur itaque nobis quae, incidunt sapiente quod quidem facere quisquam.</div>
+        <div>Repudiandae ipsum incidunt quas cumque totam magnam, quidem minima vitae ea! Non fuga quos nesciunt saepe excepturi, culpa, assumenda iste dolor in molestias illum libero sed ab amet voluptas repellendus.</div>
+    </li>
+    <li class="last">jkhjkjk</li>
+</ul>
+<ul class="class">
+    <li class="class first">
+        <div>Sint fugit labore iure aut odio praesentium repudiandae doloribus molestiae porro soluta corporis nostrum atque velit, minus facere, officiis possimus cum cupiditate, laboriosam autem consequatur quam dolores mollitia? Cumque, consequuntur.</div>
+        <div>Aliquam omnis, sunt nostrum maiores eveniet quo dolorum consequuntur pariatur dolore impedit, porro corrupti molestias voluptate necessitatibus odio facilis, facere commodi ipsum sit eaque. Atque inventore totam dolorem praesentium vero.</div>
+    </li>
+</ul>
+
+
+<!-- 
+*next neightbour/ NEXT SIBLING
+
+SEL1+SEL2+SEL3 {
+
+
+}
+
+
+ -->
+
+ <STYLE>
+ h2+p+p{
+
+     color: red;
+ }
+ 
+ </STYLE>
+
+ <h2>
+     <p></p>
+     <div></div>
+     <p></p>
+     <p></p>
+ </h2>
+ <h2>
+     <p></p>
+     <p></p>
+     <p></p>
+ </h2>
+
+
+ <!-- 
+*attribute
+
+[attribute="value"]{
+
+
+}
+
+
+  -->
+
+  <style>
+  [width="300"]{
+
+      color: red;
+  }
+
+  [id="box"]{  /*#box*/
+
+      color: red;
+  }
+  
+  </style>
+
+
+<!--  
+    *universal / aall
+
+    *{
+
+        
+    }
+
+
+-->
+
+HOMEWORK https://flukeout.github.io/#

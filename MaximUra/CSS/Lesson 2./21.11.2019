@@ -1,0 +1,58 @@
+2. GLOBAL STYLES
+
+inLine
+  <tag style="CSS"/>
+
+  styles описываются в 
+  <head> применяются в <body> вызываясь по имени 
+  тега описаного в <head>
+  selector это специальная формула которая описывает 
+  стиль. формулы селектора могут быть различными
+
+         селекторы бывают слейдущие
+         а) tag
+         b) class
+         c) id
+         d) pseudo
+         e) complex
+
+
+   В CSS коментарий оставляется /* ..... */
+
+   float
+
+
+  CLASS
+   класс обозначается точкой перед назво\анием класса.
+   класс упоменается и применяется в теге путем введения его 
+   имени внутри тега
+   имеет значение регистр при названии и вызова класса
+
+  ID 
+
+
+
+   rep.it ->register
+   *Syntax (words,indetificator,)
+
+  <head>
+      <style>
+         selector1 {
+             propr: val;
+             propr: val;
+             .....
+                    }
+         selector2 {
+             propr: val;
+             propr: val;
+             .....
+                    }
+                    
+      </style>
+  </head>
+
+  <body>
+
+     STRUCTURE
+
+  </body>       

@@ -1,0 +1,55 @@
+:hover
+::pseudo
+*predefenita!( предопределнные
+)
+
+- state
+   :hover
+   :active
+   :focus
+   :checked
+   :visited
+   ...
+- structure
+   :first-child
+   :nth-child(n)
+   :last-child
+   ...
+- logical
+   :not(selector)
+   ... 
+- element
+   ::before
+   ::after
+
+   ::selection
+   ... 
+
+   <p>[before]Text[after]</p>
+   p::before{
+       ... 
+   }
+
+   a:hover{
+
+
+
+   }
+
+
+   <ul class="List">
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+
+
+
+
+   </ul>
+
+   li::hover{color: red;
+}
+
+   :first-child{
+              color: green;
+   }

@@ -1,0 +1,108 @@
+H/W
+
+
+1. HTML NEW SEMANTIC ELEMENTS
+       header
+       footer
+       nav
+       article
+       section
+       figure 
+        figcaption
+       asaid
+       main 
+    
+2. DIV/SPAN
+
+
+3. OPTIONAL 
+    Microformats/schema.org
+
+4. IOT
+
+
+
+Lesson 19.11.19
+
+
+CSS - Cascading StyleSheets - language
+    ---> styles / cosmetics / beaty / usability
+
+    Так же как и HTML CSS имеет версиии 1,2,3+ -> 4
+
+    CSS -> зависит от -> Структур (HTML, XML,...)
+    addvantages
+      * uniform - universal
+
+      align="center" - HTML
+      text-align: center;  - CSS
+
+      bgcolor="black" - HTML
+      background-color: black; - CSS
+
+      * global
+      * 150+ properties/ vartiations 3000+
+      * effects / filters
+      * units (px, %, em, vh, cm, mm, ...)
+      * animations / transitions
+      * states
+      * adaptive
+      * ....... more
+
+
+
+      ----------- HOW WRITE STYLES????-----------
+      HTML attribute="value"
+      CSS property: value;
+
+      ----------- STYLESHEET? --------------------
+      property1: value1;
+      property1: value1;
+      property1: value1;
+      ............ у каждожо свойства, настройки свое значение
+      ............variations
+      property: value;
+      property-detail: value1;
+
+      margin: 10px;
+      margin-right: 10px
+      Через дифис пишится уточнение об объекте к которому применяется стиль
+
+      property: value1 value2 value3 .......;  // enum
+
+      kitchen-floor: white;
+      kitchen-celling:blackl
+      kitchen-walls: grey;
+            ЛИБО
+      kitchen: white black grey;
+      
+
+      font: Verdana, Ariall; ксс выбирает из вариантов при прохождении 
+
+      property: func( value); функция выполняет функцию)) рисует вычисляет и т.д.
+
+      --- METHODS (CSS ---conecting--> HTML)-----
+      1. inline
+      2. global
+      3. external
+
+      ----------------------------------------------
+      styles/
+        methods/
+           inline.html-> skeleton
+
+
+           Бывает 3 вида стилей
+                1, default styles
+                2. inherit styles
+                3. user styles (пользователь CSS стиля)
+
+            Стиль CSS записывается в тег.
+
+
+
+        w3schools.com color -ресурс для подбора кодов цветов для  CSS и другого
+
+      margin - обозначает растояние вокруг объекта к которому применяется
+
+      ctrl+shift ввести в появившейся строке wrap - выравнивание по ширине экрана кода в VS
