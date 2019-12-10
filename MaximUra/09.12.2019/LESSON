@@ -1,0 +1,81 @@
+inline -> <tag style="CSS">
+global -> <head><style>
+external ->
+   page.html ----_ style.css 
+   style.css   
+   -------------
+   selector1{
+
+       propr:val;
+   }
+   selector2{
+
+       propr: val;
+   }
+
+page.html
+      ------------------
+      head
+      --> <link rel="stylesheet" href="style.css" />
+-------------------------------------------------------
+-------------------------------------------------------
+
+
+CSS PRIORITY / CSS SPECIFITY
+
+1. element <--------- style1, style2, style3...
+same weight (tag vs tag, class vs class, id vs id)
+li{
+
+    color: red;
+}
+
+...
+
+li{
+
+    color:green;
+}
+
+LAST - WINS
+
+-------------------------------------------------------
+
+<p class="first texts">lorem.....</p>
+-------------------------
+.first{
+    color: white;
+}
+
+....
+.texts{
+
+    color: green;
+}
+
+
+2. SIMPLE PRIORITY RULE
+inline>#id > .class > ^pseudo > tag > parent > default
+
+------------------------------------------------------------
+
+3. complex selectors
+
+#container .content .col p{
+
+//121
+}
+
+#container div .col p{
+
+// 112
+}
+
+
+inline style 1000
+ID 100
+class/ pseudoclass 10
+element . pseudo element 1
+
+
+      1
