@@ -1,0 +1,17 @@
+Framework:
+
+    bootstrap - getbootstrap.com
+    Materialize - materializecss.com
+    bulma.io
+    get.foundation
+    UIkit
+    W3.CSS
+
+    свой css идет после библиотечного
+    stackoverflow.com
+
+    gulp элементы автоматизации процесов ( подобие командной строки для подключения определенных модулей с фрэймворка)
+
+    Homework
+
+    настроить модальное окно
