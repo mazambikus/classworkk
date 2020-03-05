@@ -1,0 +1,27 @@
+.font-bigger{
+
+    font-size: 1.6rem;
+}
+
+.nav-height{
+
+    height: 116px;
+}
+
+.star:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+
+}
+
+.star:after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+    
+}

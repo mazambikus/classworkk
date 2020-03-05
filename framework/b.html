@@ -24,6 +24,8 @@
 <!------------------------------- NAVBAR -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- обернули в контейнер для отступа -->
+      <div class="container"> 
         <a class="navbar-brand" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -57,6 +59,7 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
+      </div>
     </nav>
 
     <!-- --------------------------------Carousel -->
@@ -79,14 +82,14 @@
        <div class="carousel-item">
          <img src="images/2.jpg" class="d-block w-100" alt="...">
          <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
+        <h5>Second slide label</h5>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
        </div>
        <div class="carousel-item">
          <img src="images/3.jpg" class="d-block w-100" alt="...">
          <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
+        <h5>Third slide label</h5>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
       </div>
        </div>
@@ -100,6 +103,71 @@
        <span class="sr-only">Next</span>
      </a>
     </div>
+
+    <section>
+
+      <!-- <div class="container"> -->
+        <!-- класс row для создания таблицы, ничего в нем не пишим, считается дежурным тегом, принято не помещать никакого контейнера-->
+        <!-- <div class="row"> -->
+          <!-- создали колонки классом col  -->
+          <!-- при необходимости можем насраивать колонки записывая класс col-x, где х - это размер колонки от 1 до 12 -->
+          <!-- можем увеличить класс ещё на одну велечину, задающую адаптивную ширину для разных устройств, смотреть документация на bootstrap > utilites > grid  записывается col-XX-5 где ХХ размер экрана, а далее ширина столбца -->
+          <!-- если просто col то колонка занимает оставшееся пространство. -->
+          <!-- есть класс order для смены поряка колонок -->
+          <!-- можно добавлять ряды в колонки. -->
+          <!-- <div class="col-md-2 col-lg-3">
+            <div class="row">
+              <div class="col"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam minus, odio excepturi mollitia, repellendus non sapiente earum eius, tempora reprehenderit doloremque? Possimus enim adipisci blanditiis obcaecati sit quaerat. Eius!
+              </div>
+              <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam minus, odio excepturi mollitia, repellendus non sapiente earum eius, tempora reprehenderit doloremque? Possimus enim adipisci blanditiis obcaecati sit quaerat. Eius!</div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam minus, odio excepturi mollitia, repellendus non sapiente earum eius, tempora reprehenderit doloremque? Possimus enim adipisci blanditiis obcaecati sit quaerat. Eius!</div>
+          <div class="col-md-2 col-lg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ullam minus, odio excepturi mollitia, repellendus non sapiente earum eius, tempora reprehenderit doloremque? Possimus enim adipisci blanditiis obcaecati sit quaerat. Eius!</div>
+          
+
+
+        </div>
+
+
+      </div> -->
+
+
+      <div class="container">
+        <div class="col-lg-2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas alias, saepe temporibus tempore optio commodi! Repudiandae repellendus non ut velit quidem quia, nemo, voluptate corporis optio, ea excepturi est quas!
+        Tempora et ratione sunt ut laborum quod dolorum perspiciatis distinctio quis quibusdam odit, expedita hic est suscipit sequi libero. Laboriosam odio suscipit eum. Facere rerum ad, quo ut animi error.
+        Illum minus molestiae excepturi doloribus nihil, quod ducimus, repellat sapiente totam ea ipsum unde nobis magni pariatur non impedit, rem minima omnis repudiandae quae at similique? Ratione numquam similique ad.
+        Natus iure cupiditate quasi quibusdam nisi! Officiis odio assumenda repudiandae alias, et sint dolorum quo error provident dignissimos reprehenderit accusamus commodi quia, voluptatibus magni. Laudantium deleniti quibusdam molestiae! Praesentium, aperiam.
+        Debitis, dignissimos impedit, minima asperiores suscipit, inventore natus quis officia deserunt cumque nobis nihil dolorem ipsa enim! Praesentium porro, earum inventore ea natus exercitationem, rem, non similique voluptatem saepe ex.
+        <div class="col-lg-10">
+          <div class="row">Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque libero pariatur molestiae quibusdam magni nobis quaerat qui! Molestiae saepe excepturi id hic cum necessitatibus nemo ipsa repellat odit commodi.
+        Quod unde nobis molestias, error est necessitatibus excepturi, hic distinctio minus ipsa adipisci, alias sed soluta voluptatem et reprehenderit obcaecati eius cumque atque vitae vel! Pariatur sapiente ea officia repellat?
+        Fugiat necessitatibus ab eius qui, expedita neque totam ipsum doloribus facilis asperiores delectus sint nisi dolorem corrupti aspernatur ipsam aut veritatis iure magnam consequuntur minima accusamus hic, temporibus atque! Doloremque?
+        Eligendi vero id alias sed doloremque, eaque nulla repellat dignissimos cumque nihil adipisci ipsam explicabo quam unde voluptatibus molestias ducimus quae voluptas quidem dolores possimus. Velit eaque corrupti minima quo.
+        Earum, ratione fugit. Laborum nemo eos sint neque, vel beatae labore! Omnis mollitia laborum fugiat nisi blanditiis voluptas ratione esse harum est, possimus hic eum facilis voluptate nihil magnam cupiditate.</div>
+        <div class="col-lg-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum corrupti dignissimos accusantium voluptas assumenda sint commodi distinctio sunt! Autem, nobis nulla ut velit debitis optio amet fuga eos iusto nisi.
+        Voluptatem quia iste adipisci! Mollitia sapiente ad vero voluptatibus repellendus quis nam facilis? Cupiditate molestiae reiciendis inventore voluptatum saepe reprehenderit iste, voluptate itaque praesentium porro alias in esse architecto! Maiores!
+        Pariatur voluptatum quasi sunt, eaque quas, iusto dicta quam ab, cupiditate id quidem odit sed expedita! Perspiciatis reiciendis, doloremque maiores possimus cum quo cumque facere non voluptas nesciunt numquam harum?
+        Saepe suscipit minima quis debitis sint maiores vitae facilis nisi possimus. Sapiente nisi quasi, iste non assumenda architecto eaque numquam aliquam provident perspiciatis ullam ad laborum corrupti sint quisquam tenetur?
+        Aperiam repudiandae dignissimos voluptatum veniam fuga autem perspiciatis ullam voluptatem eveniet repellendus deserunt sed obcaecati minima quasi doloremque ea iste unde a, asperiores aliquid molestiae omnis! Illum, vero sequi. Animi!</div>
+          </div>
+          
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim consectetur possimus, quisquam voluptates nisi, animi error distinctio, quis necessitatibus harum accusamus in dolorem labore adipisci impedit dolore qui molestias!
+        Nesciunt architecto mollitia perferendis possimus corporis optio, iure modi sapiente adipisci. Eos, aspernatur quia! Minima, mollitia facere ex nihil excepturi distinctio illum tenetur modi quod voluptates omnis, quo harum quaerat!
+        Cum eum officia aspernatur doloremque similique accusamus soluta voluptatibus autem hic debitis non culpa odit necessitatibus tenetur at natus totam quas, recusandae consequatur pariatur quis fugiat rerum cumque! Amet, saepe.
+        Quos nesciunt dolores sit eius nam fugit aliquid, veniam at. Qui quibusdam hic et, laudantium rem quos voluptatibus fugit eligendi necessitatibus ab. Temporibus, harum est numquam ullam at quod libero!
+        Illo, similique. Fugiat minus dolorum sit, placeat in quisquam nulla veniam doloribus cum neque fuga odit nesciunt eligendi a voluptas at explicabo perspiciatis, possimus architecto eius! Unde atque reprehenderit nesciunt.</div>
+        <div class="col">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus incidunt, modi praesentium, ullam atque dolorem eos quisquam a sapiente omnis cumque minus eius commodi consequuntur voluptatibus! Sunt in tempore minus!
+        Exercitationem, molestiae. Voluptatibus, odit fugit. Consequatur vel ipsum libero reiciendis, quam at et maxime sequi, illo dignissimos praesentium consectetur, nisi sapiente deleniti rem non id voluptas sunt dolores commodi? Fugit?
+        Eius nihil doloribus consequatur quis ipsam nam quae incidunt dolorem ducimus? Eum natus voluptas sunt suscipit deserunt vero laudantium, id fuga culpa qui? Id nam corporis adipisci voluptate. Explicabo, delectus?
+        Quis error veniam aperiam, cupiditate voluptates nesciunt, voluptatem in facilis unde, corrupti soluta! Ullam similique sunt, iste tempora atque labore a exercitationem tempore facilis. Consequuntur nisi ea sint animi alias?
+        Aperiam natus illo voluptates? Odio reprehenderit ut voluptatum et, eos aspernatur repudiandae soluta adipisci quo! Nesciunt omnis id distinctio adipisci debitis facilis perspiciatis excepturi. Libero dolores quidem nam repellat temporibus?</div>
+      </div>
+      </div>
+    </section>
 
 
 
