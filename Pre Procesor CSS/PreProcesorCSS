@@ -1,0 +1,177 @@
+PreProcesorCSS
+
+codepen.io
+
+login: mazambik
+
+
+
+/* сперва создаем селектор  root , затем в него вписываем переменные
+Далее в круглых скобках var() вызываем переменные*/
+:root{
+  
+  --main-color: #ccc;
+  --secondary-color: aqua;
+  --size: 200px;
+/*  -- обозначение создания переменных  */
+  
+  
+}
+
+div{
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--main-color);
+}
+
+
+
+для создания переменных в SCSS используем знак $ и название переменой 
+для вызова также используем $
+
+
+
+
+SCSS__________
+
+ $main-color: green;
+  $secondary-color: aqua;
+  $size: 200px;
+  
+
+  
+  
+
+
+nav{
+  
+  background-color: $main-color;
+  height: $size * 0.5;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      a{
+//         darken(color, %) - затемнение функция
+//         lighten() - осветвеления функция
+        color: darken($main-color, 10);
+        text-decoration: none;
+        padding: $size / 10;
+        &:hover{
+          color: lighten($main-color, 20);
+          
+        }
+      }
+    }
+  }
+}
+
+
+_____HTML
+
+<nav>
+  <ul>
+    <li><a href="">text</a></li>
+    <li><a href="">text</a></li>
+    <li><a href="">text</a></li>
+  </ul>
+</nav>
+
+
+
+
+__________________________
+mixin
+
+  $main-color: green;
+  $secondary-color: aqua;
+  $size: 100px;
+
+@mixin flex(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin rotate($degree){
+  transform: rotate($degree);
+}
+// создать миксин @mixin name(){}
+// подключить миксин @include name();
+  
+
+
+nav{
+  
+  background-color: $main-color;
+  height: $size * 0.5;
+  ul{
+    @include flex();
+    margin: 0;
+    padding: 0;
+    li{
+      // display: inline-block;
+      list-style: none;
+      a{
+//         darken(color, %) - затемнение функция
+//         lighten() - осветвеления функция
+        display: block;
+        color: darken($main-color, 10);
+        text-decoration: none;
+        padding: $size / 10;
+        &:hover{
+          color: lighten($main-color, 20);
+          
+        }
+      }
+    }
+  }
+}
+.rotate{
+  @include rotate(45deg);
+  width: $size;
+  height: $size;
+  background: linear-gradient(black, grey, white);
+  border-radius: 100%;
+  
+}
+
+
+
+
+
+____________________________-
+
+
+ $main-color: gold;
+ $size: 100px;
+
+
+@mixin transform($function){
+  transform: $function;
+}
+// создать миксин @mixin name(){}
+// подключить миксин @include name();
+  
+
+.color{
+  @include transform(translateY(100px));
+  width: $size;
+  height: $size;
+  
+    @if $main-color == grass{
+      background: green;
+  }@else if $main-color == river{
+    backgrond: blue;
+  }@else if $main-color == fire{
+    background: red;
+    
+  }@else if $main-color == gold{
+    background: gold;
+    
+  }
+  
+  border-radius: 100%;
+  
+}
