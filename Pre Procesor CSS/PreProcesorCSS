@@ -34,7 +34,7 @@ div{
 
 SCSS__________
 
- $main-color: green;
+  $main-color: green;
   $secondary-color: aqua;
   $size: 200px;
   
@@ -175,3 +175,41 @@ ____________________________-
   border-radius: 100%;
   
 }
+
+------------------------------------------------
+
+
+
+<div class="panel">
+  <a href="">&#8606; Prev</a>
+  <a href="">1</a>
+  <a href="">Next &#8608;</a>
+</div>
+
+
+
+$color: yellow;
+$size: 10px;
+
+
+.panel{
+  padding: $size * 2;
+  background-color: darken($color, 10);
+  text-align: center;
+  a{
+    display: inline-block;
+    padding: 10;
+    text-decoration: none;
+    color: darken($color, 90);
+    background: linear-gradient(darken($color, 40), darken($color, 20), darken($color, 10));
+    border-radius: $size * 0.3;
+    &:hover{
+     background: linear-gradient(darken($color, 10), darken($color, 20), darken($color, 40));
+    }
+    
+  }
+}
+
+
+
+_________________________________

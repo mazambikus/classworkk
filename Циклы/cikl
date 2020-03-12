@@ -1,0 +1,132 @@
+html
+
+<div>zebra</div>
+<div>zebra</div>
+<div>zebra</div>
+<div>zebra</div>
+<div>zebra</div>
+<div>zebra</div>
+<div>zebra</div
+
+
+
+scss
+
+@mixin zebra(){
+  @for $i from 1 through 7{
+    @if $i % 2 == 0{
+      div:nth-child(#{$i}){
+      background-color: black;
+      color: white;
+      }
+    }
+  }
+}
+*{
+  @include zebra();
+}
+
+
+
+
+-----------------
+watch
+
+<div class="watch">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+
+----------
+
+
+body{
+  background-color: white;
+}
+.watch{
+  width: 200px;
+  height: 200px;
+  border: 2px solid grey;
+  border-radius: 100%;
+  position: relative;
+  @for $i from 1 through 60{
+    div:nth-child(#{$i}){
+    width: 10px;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    transform-origin: 100px 0;
+    transform: rotate($i * 6deg);
+      @if $i % 5 == 0{
+        width: 20px;
+        background-color: yellow;
+      }
+      @if $i % 15 == 0{
+        width: 25px;
+        background-color: black;
+        }
+      
+  }
+  }
+}
